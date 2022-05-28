@@ -1,0 +1,6 @@
+project: code-terror/snarkos
+target: network
+
+cmds:
+  - cmd: ./network
+    libfuzzer: true
