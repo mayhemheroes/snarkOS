@@ -2,5 +2,5 @@ project: code-terror/snarkos
 target: network
 
 cmds:
-  - cmd: ./network
+  - cmd: ./snarkOS/fuzz/target/x86_64-unknown-linux-gnu/release/network
     libfuzzer: true
