@@ -1,0 +1,6 @@
+project: code-terror/snarkos
+target: deserialization
+
+cmds:
+  - cmd: ./deserialization
+    libfuzzer: true
