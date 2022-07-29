@@ -1,4 +1,4 @@
-project: code-terror/snarkos
+project: snarkos
 target: network
 
 cmds:
