@@ -10,4 +10,8 @@ RUN ${HOME}/.cargo/bin/cargo install -f cargo-fuzz
 ADD . /snarkOS
 WORKDIR /snarkOS/fuzz/
 RUN ${HOME}/.cargo/bin/cargo fuzz build
-WORKDIR /
+#package stage
+FROM ubuntu:20.04
+RUN apt-get update && apt-get install -y openssl
+RUN mkdir -p /snarkOS/fuzz
+COPY --from=builder /snarkOS/fuzz /snarkOS/fuzz
