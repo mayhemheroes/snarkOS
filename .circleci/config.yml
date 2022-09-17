@@ -399,7 +399,6 @@ jobs:
             docker manifest create $DOCKER_REPO:${CIRCLE_BRANCH}-latest --amend $DOCKER_REPO:${ARM_TAG} --amend $DOCKER_REPO:${AMD_TAG}
             docker manifest inspect $DOCKER_REPO:${CIRCLE_BRANCH}-latest
             docker manifest push $DOCKER_REPO:${CIRCLE_BRANCH}-latest
-            docker manifest push $DOCKER_REPO:latest
             echo "Pushed $DOCKER_REPO:${CIRCLE_BRANCH}-latest"
             docker manifest create $DOCKER_REPO:latest --amend $DOCKER_REPO:${ARM_TAG} --amend $DOCKER_REPO:${AMD_TAG}
             docker manifest inspect $DOCKER_REPO:latest
