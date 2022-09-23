@@ -241,7 +241,7 @@ jobs:
           cache_key: snarkos-node-store-cache
   # codecov:
   #   machine:
-  #     image: ubuntu-2204:2022.07.1
+  #     image: ubuntu-2204:current
   #     docker_layer_caching: true
   #   resource_class: xlarge
   #   steps:
