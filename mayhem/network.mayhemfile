@@ -1,0 +1,7 @@
+project: snarkos
+target: network
+
+cmds:
+  - cmd: /network
+  - cmd: /network_no_inst @@
+    libfuzzer: false

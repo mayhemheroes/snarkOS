@@ -1,0 +1,7 @@
+project: snarkos
+target: deserialization
+
+cmds:
+  - cmd: /deserialization
+  - cmd: /deserialization_no_inst @@
+    libfuzzer: false
